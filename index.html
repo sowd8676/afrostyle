@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFROSHOP-STYLE</title>
+</head>
+<body>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        background: #FEF3C7;
+        color:#1F2937;
+    }
+    header{
+        background: #111827;
+        padding: 15 px 40 px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img{
+        width: 80px;
+        height: auto;
+    }
+    nav ul{
+        display:flex;
+        list-style: none;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: #D97706;
+    }
+    .nav ul{
+        display: flex;
+        list-style: none;
+    }
+    .hero{
+        height: 90vh;
+        background: url(https://prod.cdn-medias.jeuneafrique.com/cdn-cgi/image/q=auto,f=auto,metadata=none,width=1280,height=720,fit=cover/https://prod.cdn-medias.jeuneafrique.com/medias/2018/04/03/peniel-enchill-untitled_artwork-92-convertimage.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20 px;
+    }
+    .hero-text{
+        background: rgba(0,0,0,0,5);
+        padding: 30px;
+        border-radius: 10px;
+        color: white;
+    }
+    .hero h1{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .hero p{
+        margin-bottom: 20 px;
+    }
+    .bnt{
+        display: inline-block;
+        padding: 12px 20 px;
+        background: #92440E;
+        color: white;
+        text-decoration:none;
+        border-radius: 8px;
+        margin-right: 10px ;
+    }
+    .bnt:hover{
+        background: #D97706;
+    }
+    .bnt-secondaire{
+        background-color: #065F46;
+    }
+    .section{
+        padding: 50px 20px;
+    }
+    section h2
+    section h1{
+        text-align: center;
+        margin-bottom: 30 px;
+    }
+    .dies{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px ,1fr));
+        gap: 20 px;
+    }
+    .die{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10 px;
+        text-align: center;
+    }
+    .die img{
+        width: 50%;
+        height: 300 px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .die h3{
+        margin: 15px 0;
+    }
+    .die p{
+        margin-bottom: 10 px;
+        color: #6B7280;
+    }
+    .die button{
+        background-color: #92400E;
+        color: white;
+        border: none;
+        padding: 10 px 15 px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .die button:hover{
+        background-color: #D97706;
+    }
+    form{
+        max-width: 600 px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    form input
+    form textarea{
+        margin-bottom: 15 px;
+        padding: 12 px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    form button{
+        background-color: #111827;
+        color: white;
+        text-align: center;
+        padding: 20 px;
+    }
+    .reseau a{
+        color: #D97706;
+        margin: 0 10 px;
+        text-decoration: none;
+    }
+    @media screen and (max-width:768 px ){
+        header{
+            flex-direction: column;
+        }
+        nav ul{
+            flex-direction: column;
+            text-align: center;
+            margin-top: 15 px;
+        }
+        nav ul li{
+            margin: 10 px 0 ;
+        }
+       
+        .hero h1{
+            font-size: 30px;
+        }
+    }
+     footer{
+          background-color: #111827;
+            color: white;
+            padding: 20px ;
+            text-align: center;
+     }
+     h2{
+        text-align: center;
+     }
+     
+    
+   </style> 
+   <body>
+    <header>
+        <div class="logo">
+            <img src="https://i.pinimg.com/736x/3e/5d/7e/3e5d7e15ceeb9c3a87f603806aa52dc1.jpg" alt="logo AFROSTYLE-SHOP">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section class="hero">
+   <div class="hero-text">
+    <h1>Exprime ton style avec élégance</h1>
+     <p>
+        AFROSTYLE-SHOP propose des vetements modernes inspirés de la culture africaine,
+          concus pour allier tradition , confort et élégance
+     </p>
+     <a href="collections.html" class="bnt">Découvrir la collection</a>
+     <a href="contact.html" class="bnt-secondaire">Nous contacter</a>
+   </div>
+   </section>
+   <section class="Présentation">
+    <h2>Notre boutique</h2>
+    <p>
+        Nous metton en valeur la mode africaine moderne avec des vetements uniques,
+        élégants e confortables.
+    </p>
+
+    <section class="dies">
+     <div class="die">
+      <img src="https://i.pinimg.com/1200x/f2/39/05/f239055bd11f5ebe2d17875678df73b5.jpg" alt="">
+      <h1>Chemise wax</h1>
+      <p>Style moderne et élégant</p>
+     </div>
+     <div class="die">
+       <img src="https://i.pinimg.com/control1/736x/c4/1f/58/c41f58612b0424dc483dbde22b945284.jpg" alt="">
+       <h1>Robe africaine</h1>
+       <p>Confort et beauté</p>
+     </div>
+     <div class="die">
+      <img src="https://i.pinimg.com/control1/1200x/8f/9c/ac/8f9cac5f870babfe371aa38df75d518e.jpg" alt="">
+      <h1>Boubou moderne</h1>
+      <p>Tradition et modernité reunies</p>
+     </div>
+    </section>
+   <section class="avantages">
+    <h2>Pourquoi choisir AFRISTYLE-SHOP ?</h2>
+    <div class="die">
+    <div class="die">
+    <h3>Qualité</h3>
+    <p>Tissus résistants et confortable</p>
+    </div>
+    </div>
+    <div class="die">
+    <h3>Elégance</h3>
+    <p>Des styles modernes et tendances </p>
+    </div>
+   </section>
+   <footer>
+    <p> 
+        2026 AFROSRYLE-SHOP _Tous droits résérvés
+    </p>
+    <p>Adresse :Dakar,Sénégal</p>
+    <p>Téléphone:78 206 87 26</p>
+    <div class="reseau">
+     <a href="#">Facebook</a>
+     <a href="#">Instagram</a>
+     <a href="#">Tiktok</a>
+     <a href="#">Whatshap</a>
+    </div>
+   </footer>
+</body>
+</html>
